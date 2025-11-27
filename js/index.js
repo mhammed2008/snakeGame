@@ -101,8 +101,9 @@ function addPoint(y, x) {
         let pointLeft = point.left - x;
           pointTop = stringing(pointTop).includes("-") ? stringing(pointTop).split('-')[1] ++ : pointTop;
         pointLeft = stringing(pointLeft).includes("-") ? stringing(pointLeft).split('-')[1] ++ : pointLeft; 
-
-        if ( pointTop < 30 &&  pointLeft < 30) {
+        
+        if (pointTop < 10 && pointLeft < 10) {
+            
             points = 1 + points;
             window.innerWidth
             window.innerHeight
