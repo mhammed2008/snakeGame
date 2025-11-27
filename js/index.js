@@ -36,7 +36,7 @@ function snakeMovemint() {
         const snakeBrakePoint = document.querySelector(`.snakeBrakePoint${number}`);
         snakeBrakePoint.style.left = x;
                 snakeBrakePoint.style.top = y;
-        snakeBrakePoint.style.transition = `all ${number *60}ms ease-in-out`;
+        snakeBrakePoint.style.transition = `all ${number *10}ms ease-in-out`;
 // myElement.style.transition = 'opacity 0.5s ease-in-out';
         snakeBrakePoint.style.transform = number > 1? number === 2 ?`translateX(40%)` :`translateX(${number * 40}%)`:`translateX(-50%)`;
             
