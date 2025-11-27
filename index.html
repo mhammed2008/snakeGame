@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake game</title>
+    <link rel="stylesheet" href="css/index.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="overflow-hidden">
+
+    <div class="snake-box">
+    <div class="point absolute bg-blue-400 rounded-full w-12 h-12 top-10 left-10 " ></div>
+
+        <div class="snake">
+
+
+        </div>
+    </div>
+
+    <div id="win" class="w-full h-[100vh] bg-blue-400  items-center justify-center text-center absolute top-0 left-0 right-0 bottom-0 flex-col ">
+        <h1 class="text-6xl text-center text-yellow-500 font-bold ">You win</h1>
+        <button onclick="restart()" class="bg-green-500 p-4 rounded-full cursor-pointer hover:bg-green-800 transition-all ">restart Game</button>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

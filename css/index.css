@@ -1,0 +1,60 @@
+.snake-box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.snakeHead {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #242424;
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+}
+
+.snakeBrakePoint1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #242424;
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+}
+.snakeBrakePoint1::after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.snakeBrakePoint1::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    bottom: 5px;
+    left: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.snakeBrakePoint {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #242424;
+    border-radius: 50%;
+    
+}
+.point{
+    transition: all 500ms ease-in-out;
+}
+body {
+    cursor: none;
+}
