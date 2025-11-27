@@ -55,20 +55,7 @@ function snakeMovemint() {
     })
     snakeBox.addEventListener('click', ($event) => {
         if (points < 100) {
-                    let MouseMoveX = lastMouseMoveX - $event.clientX  ;
-        let MouseMoveY = lastMouseMoveY - $event.clientX;
-        
-       let MouseMoveYS = stringing(MouseMoveY).includes("-") ? stringing(MouseMoveY).split('-')[1] ++ : MouseMoveY;
-       let MouseMoveXS = stringing(MouseMoveX).includes("-") ? stringing(MouseMoveX).split('-')[1] ++ : MouseMoveX;
-        
 
-        if (MouseMoveX > 30 || MouseMoveYS > 30) {
-            addPoint($event.clientY, $event.clientX);
-            lastMouseMoveX = $event.clientX 
-            lastMouseMoveY = $event.clientY
-            
-        // snakeHead.style.left = $event.clientX + 'px';
-        // snakeHead.style.top = $event.clientY + 'px';
         var y = $event.clientY  + 'px';
         var x = $event.clientX  + 'px';
             for (let number = 1; number <= points; number++) {
@@ -83,7 +70,7 @@ function snakeMovemint() {
 // myElement.style.transition = 'opacity 0.5s ease-in-out';
         snakeBrakePoint.style.transform = number > 1? number === 2 ?`translateX(40%)` :`translateX(${number * 40}%)`:`translateX(-50%)`;
             
-        }
+            
         }
 
 
