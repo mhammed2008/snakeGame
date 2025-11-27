@@ -5,7 +5,7 @@ let snake = document.querySelector('.snake')
 let points = 1;
 let lose = false;
 let losingPoint = null
-let winingPoints = 20;
+let winingPoints = 200;
 let lastMouseMoveY = 0;
 let lastMouseMoveX = 0;
 function snakeMovemint() {
