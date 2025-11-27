@@ -55,6 +55,7 @@ function snakeMovemint() {
     })
     snakeBox.addEventListener('click', ($event) => {
         if (points < 100) {
+            addPoint($event.clientY, $event.clientX);
 
         var y = $event.clientY  + 'px';
         var x = $event.clientX  + 'px';
