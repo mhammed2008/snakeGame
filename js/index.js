@@ -48,9 +48,6 @@ function snakeMovemint() {
         }
         }
 
-
-        
-        
         } else {
             document.querySelector('#win').style.display = 'flex';
             snake.innerHTML = `<div class="snakeBrakePoint snakeBrakePoint1"></div>`;
@@ -119,8 +116,8 @@ function addPoint(y, x) {
             if (losingPoint === points) {
             
                                          document.querySelector('.point').style.background = `red`
-         document.querySelector('.point').style.top = `${Math.floor(Math.random() * h)}px`
-         document.querySelector('.point').style.left = `${Math.floor(Math.random() * w)}px`
+         document.querySelector('.point').style.top = `${int(Math.floor(Math.random() * h))}px`
+         document.querySelector('.point').style.left = `${int(Math.floor(Math.random() * w))}px`
                 setTimeout(() => {
                          document.querySelector('.point').style.background = `#51a2ff`
          document.querySelector('.point').style.top = `${Math.floor(Math.random() * h-80)}px`
@@ -133,8 +130,8 @@ function addPoint(y, x) {
             h
             
  
-         document.querySelector('.point').style.top = `${Math.floor(Math.random() * h-80)}px`
-         document.querySelector('.point').style.left = `${Math.floor(Math.random() * w-80)}px`
+         document.querySelector('.point').style.top = `${Math.floor(Math.random() * h)}px`
+         document.querySelector('.point').style.left = `${Math.floor(Math.random() * w)}px`
             }
 
     }
@@ -156,4 +153,7 @@ function restart() {
 }
 function updatePoint() {
     document.querySelector(`.counter`).innerHTML  = points;
+}
+function int(val) {
+    return stringing(val).includes("-") ? stringing(val).split('-')[1] ++ : val
 }
