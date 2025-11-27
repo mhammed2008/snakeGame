@@ -102,14 +102,16 @@ function addPoint(y, x) {
           pointTop = stringing(pointTop).includes("-") ? stringing(pointTop).split('-')[1] ++ : pointTop;
         pointLeft = stringing(pointLeft).includes("-") ? stringing(pointLeft).split('-')[1] ++ : pointLeft; 
         
-        if (pointTop < 10 && pointLeft < 10) {
-            
-            points = 1 + points;
+        if ( pointTop < 30 &&  pointLeft < 30) {
+            setTimeout(()=> {
+                 points = 1 + points;
             window.innerWidth
             window.innerHeight
             
          document.querySelector('.point').style.top = `${Math.floor(Math.random() * window.innerHeight)}px`
          document.querySelector('.point').style.left = `${Math.floor(Math.random() * window.innerWidth)}px`
+            },500)
+           
     }
 
     }
