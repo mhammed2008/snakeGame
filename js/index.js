@@ -3,6 +3,7 @@ let snake = document.querySelector('.snake')
 // const snakeHead = document.querySelector(`.snakeHead`);
 
 let points = 1;
+let winingPoints = 20;
 let lastMouseMoveY = 0;
 let lastMouseMoveX = 0;
 function snakeMovemint() {
@@ -10,7 +11,7 @@ function snakeMovemint() {
     document.body.style.cursor = "none";
             
     snakeBox.addEventListener('mousemove', ($event) => {
-        if (points < 100) {
+        if (points < winingPoints) {
                     let MouseMoveX = lastMouseMoveX - $event.clientX  ;
         let MouseMoveY = lastMouseMoveY - $event.clientX;
         
@@ -54,7 +55,7 @@ function snakeMovemint() {
 
     })
     snakeBox.addEventListener('click', ($event) => {
-        if (points < 100) {
+        if (points < winingPoints) {
             addPoint($event.clientY, $event.clientX);
 
         var y = $event.clientY  + 'px';
