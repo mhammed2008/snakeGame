@@ -18,7 +18,7 @@ function snakeMovemint() {
        let MouseMoveYS = stringing(MouseMoveY).includes("-") ? stringing(MouseMoveY).split('-')[1] ++ : MouseMoveY;
        let MouseMoveXS = stringing(MouseMoveX).includes("-") ? stringing(MouseMoveX).split('-')[1] ++ : MouseMoveX;
         
-
+document.querySelector(`.snakeBrakePoint${number}`).style.transform = `rotate(${$event.clientX}deg)`;
         if (MouseMoveX > 30 || MouseMoveYS > 30) {
             addPoint($event.clientY, $event.clientX);
             lastMouseMoveX = $event.clientX 
@@ -74,10 +74,6 @@ function snakeMovemint() {
             
             
         }
-
-
-        
-        
         } else {
             document.querySelector('#win').style.display = 'flex';
             snake.innerHTML = `<div class="snakeBrakePoint snakeBrakePoint1"></div>`;
@@ -103,15 +99,12 @@ function addPoint(y, x) {
         pointLeft = stringing(pointLeft).includes("-") ? stringing(pointLeft).split('-')[1] ++ : pointLeft; 
         
         if ( pointTop < 30 &&  pointLeft < 30) {
-            setTimeout(()=> {
-                 points = 1 + points;
+            points = 1 + points;
             window.innerWidth
             window.innerHeight
             
          document.querySelector('.point').style.top = `${Math.floor(Math.random() * window.innerHeight)}px`
          document.querySelector('.point').style.left = `${Math.floor(Math.random() * window.innerWidth)}px`
-            },500)
-           
     }
 
     }
