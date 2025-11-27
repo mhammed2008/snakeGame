@@ -9,19 +9,22 @@
 
 </head>
 <body class="overflow-hidden">
-
+    <p class="counter absolute top-10 right-10 text-2xl font-bold text-blue-800 z-10 ">1</p>
     <div class="snake-box verflow-hidden">
     <div class="point absolute bg-blue-400 rounded-full w-12 h-12 top-10 left-10 " ></div>
 
         <div class="snake">
-
-
+            <div class="snakeBrakePoint snakeBrakePoint1"></div>
         </div>
     </div>
 
     <div id="win" class="w-full h-[100vh] bg-blue-400  items-center justify-center text-center absolute top-0 left-0 right-0 bottom-0 flex-col ">
         <h1 class="text-6xl text-center text-yellow-500 font-bold ">You win</h1>
         <button onclick="restart()" class="bg-green-500 p-4 rounded-full cursor-pointer hover:bg-green-800 transition-all ">restart Game</button>
+    </div>
+    <div id="lose" class="w-full h-[100vh] bg-red-600  items-center justify-center text-center absolute top-0 left-0 right-0 bottom-0 flex-col ">
+        <h1 class="text-6xl text-center text-yellow-500 font-bold  mb-10">You Lose</h1>
+        <button onclick="restart()" class="bg-yellow-500 p-4 rounded-full cursor-pointer hover:bg-green-800 transition-all ">restart Game Loser</button>
     </div>
     <script src="js/index.js"></script>
 </body>
