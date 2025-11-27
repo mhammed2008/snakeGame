@@ -18,7 +18,7 @@ function snakeMovemint() {
        let MouseMoveYS = stringing(MouseMoveY).includes("-") ? stringing(MouseMoveY).split('-')[1] ++ : MouseMoveY;
        let MouseMoveXS = stringing(MouseMoveX).includes("-") ? stringing(MouseMoveX).split('-')[1] ++ : MouseMoveX;
         
-document.querySelector(`.snakeBrakePoint${number}`).style.transform = `rotate(${$event.clientX}deg)`;
+document.querySelector(`.snakeBrakePoint1`).style.transform = `rotateY(${$event.clientX}deg)`;
         if (MouseMoveX > 30 || MouseMoveYS > 30) {
             addPoint($event.clientY, $event.clientX);
             lastMouseMoveX = $event.clientX 
