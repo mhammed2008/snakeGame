@@ -1,4 +1,4 @@
-let snakeBox = document.querySelector('.snake-box')
+let snakeBox = document.querySelector('body')
 let snake = document.querySelector('.snake')
 // const snakeHead = document.querySelector(`.snakeHead`);
 
