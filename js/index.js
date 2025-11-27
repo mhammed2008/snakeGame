@@ -112,7 +112,7 @@ function addPoint(y, x) {
                     if ( pointTop < 30 &&  pointLeft < 30) {
             points = 1 + points;
              updatePoint()
-             losingPoint = Math.floor(Math.random() * 21);
+             losingPoint = Math.floor(Math.random() * winingPoints+1);
             if (losingPoint === points) {
             
                                          document.querySelector('.point').style.background = `red`
