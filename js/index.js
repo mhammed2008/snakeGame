@@ -95,8 +95,8 @@ function stringing(number) {
     return `${number}`
 }
 function addPoint(y, x) {
-    let h = window.innerWidth - 80;
-    let w = window.innerHeight - 80;
+    let h = window.innerHeight - 80;
+    let w = window.innerWidth - 80;
     if (document.querySelector('.point').getBoundingClientRect()) {
         let point = document.querySelector('.point').getBoundingClientRect()
 
@@ -119,22 +119,22 @@ function addPoint(y, x) {
             if (losingPoint === points) {
             
                                          document.querySelector('.point').style.background = `red`
-         document.querySelector('.point').style.top = `${Math.floor(Math.random() * window.innerHeight)}px`
-         document.querySelector('.point').style.left = `${Math.floor(Math.random() * window.innerWidth)}px`
+         document.querySelector('.point').style.top = `${Math.floor(Math.random() * h)}px`
+         document.querySelector('.point').style.left = `${Math.floor(Math.random() * w)}px`
                 setTimeout(() => {
                          document.querySelector('.point').style.background = `#51a2ff`
-         document.querySelector('.point').style.top = `${Math.floor(Math.random() * window.innerHeight-80)}px`
-                    document.querySelector('.point').style.left = `${Math.floor(Math.random() * window.innerWidth - 80)}px`
+         document.querySelector('.point').style.top = `${Math.floor(Math.random() * h-80)}px`
+                    document.querySelector('.point').style.left = `${Math.floor(Math.random() * w - 80)}px`
                     losingPoint = 0
             },2000)
 
             } else {
-            window.innerWidth
-            window.innerHeight
+            w
+            h
             
  
-         document.querySelector('.point').style.top = `${Math.floor(Math.random() * window.innerHeight-80)}px`
-         document.querySelector('.point').style.left = `${Math.floor(Math.random() * window.innerWidth-80)}px`
+         document.querySelector('.point').style.top = `${Math.floor(Math.random() * h-80)}px`
+         document.querySelector('.point').style.left = `${Math.floor(Math.random() * w-80)}px`
             }
 
     }
