@@ -62,6 +62,9 @@
 body {
     /* cursor: none; */
     overflow: hidden;
+    background-image:url(https://wallpapers.com/images/high/snake-game-scales-0r8mpi8r1ik79ktu.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @keyframes point {
     0%{
